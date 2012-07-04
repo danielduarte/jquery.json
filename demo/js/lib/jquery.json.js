@@ -2,8 +2,8 @@
  * jQuery JSON Plugin
  * Plugin to convert any JavaScript value to JSON format.
  *
- * @version: 1.0
- * @author Daniel Duarte <danielddu@hotmail.com>
+ * @version: 1.0.0
+ * @author Daniel David Duarte <danielddu@hotmail.com>
  */
 
 /*globals jQuery*/
