@@ -174,7 +174,7 @@
         return json;
     };
 
-    $.toJson = function (value, options) {
+    $.toJSON = function (value, options) {
         var _defaultOptions = {
             mode: 'pretty'
         };

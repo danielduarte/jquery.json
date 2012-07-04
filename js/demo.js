@@ -13,7 +13,7 @@ $(function () {
             }
 
             var object = $.parseJSON(json);
-            var result = $.toJson(object, {mode: mode});
+            var result = $.toJSON(object, {mode: mode});
 
             $('#result').text(result);
         } catch (ex) {
