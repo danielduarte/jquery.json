@@ -1,0 +1,24 @@
+.title {
+    font-size: 20px;
+    display: inline;
+}
+
+.error {
+    color: #d00;
+}
+
+#input {
+    width: 100%;
+    height: 300px;
+}
+
+#result {
+    border: 1px solid #aaa;
+    display: block;
+    overflow: scroll;
+    min-height: 200px;
+}
+
+#mode-container {
+    float: right;
+}
