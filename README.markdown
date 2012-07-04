@@ -11,7 +11,7 @@ jQuery.json plugin
 Summary
 -------
 
-A jQuery plugin to convert Javascript values to JSON format. Thus, converts
+A jQuery plugin to convert JavaScript values to JSON format. Thus, converts
 values to string.
 It supports all the JSON specification: objects, arrays, strings, numbers, and
 null values.
