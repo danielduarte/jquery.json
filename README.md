@@ -35,15 +35,45 @@ Example:
         nestedObject: {},
         anArray: [1, 2, null, {a:1, b:2, c: []}, ""]
     };
-    
+
     var myPrettyJsonString  = $.toJSON(myObject, 'pretty'); // default
+
+        // Output:
+        //
+        // {
+        //     "aNumber": 123,
+        //     "aString": "two\nlines",
+        //     "aNullValue": null,
+        //     "nestedObject": {},
+        //     "anArray": [
+        //         1,
+        //         2,
+        //         null,
+        //         {
+        //             "a": 1,
+        //             "b": 2,
+        //             "c": []
+        //         },
+        //         ""
+        //     ]
+        // }
+
     var mySpacedJsonString  = $.toJSON(myObject, 'spaced');
+
+        // Output:
+        //
+        // {"aNumber": 123, "aString": "two\nlines", "aNullValue": null, "nestedObject": {}, "anArray": [1, 2, null, {"a": 1, "b": 2, "c": []}, ""]}
+
     var myCompactJsonString = $.toJSON(myObject, 'compact');
+
+        // Output:
+        //
+        // {"aNumber":123,"aString":"two\nlines","aNullValue":null,"nestedObject":{},"anArray":[1,2,null,{"a":1,"b":2,"c":[]},""]}
 
 Specification:
 
 `$.toJSON(value, options)`
-    
+
 `value`: Any JavaScript value.
 
 `options`: hash with the following components:
