@@ -91,17 +91,17 @@ Specification:
 
   - `indent` *(int | string)*: if it is an integer value, represents the number of spaces used for indentation. It it is a string, represents the string used for any level indentation. For example, if you want to indent with tabs, you should set this option to `"\t"`. Defaults to `4` if the used preset is `'pretty'`, or to `""` otherwise.
 
-  - keyValueSeparator *(boolean | string)*: If boolean, indicates if there must be used a single space character to separate colon and values in objects, or if there must not be used any separator. If string, represents the string used as separator between the colon and the value in the objects. Defaults to `false` for `'compact'` preset, or to `true` otherwise.
+  - `keyValueSeparator` *(boolean | string)*: If boolean, indicates if there must be used a single space character to separate colon and values in objects, or if there must not be used any separator. If string, represents the string used as separator between the colon and the value in the objects. Defaults to `false` for `'compact'` preset, or to `true` otherwise.
 
-  - undefinedReplace *(mixed)*: The value that should be used when an `undefined` value is transformed to a JSON string. This options in needed because JSON does not support undefined values. Defaults to `null`.
+  - `undefinedReplace` *(mixed)*: The value that should be used when an `undefined` value is transformed to a JSON string. This options in needed because JSON does not support undefined values. Defaults to `null`.
 
-  - functionReplace *(mixed)*: The value that should be used when a `function` value is transformed to a JSON string. This options in needed because JSON does not support function values. Defaults to `null`.
+  - `functionReplace` *(mixed)*: The value that should be used when a `function` value is transformed to a JSON string. This options in needed because JSON does not support function values. Defaults to `null`.
 
-  - compactEmptyArrays *(boolean)*: Indicates if empty arrays are compacted even if the used preset is `'pretty'`. A compacted array looks always like `[]`. Defaults to `true`.
+  - `compactEmptyArrays` *(boolean)*: Indicates if empty arrays are compacted even if the used preset is `'pretty'`. A compacted array looks always like `[]`. Defaults to `true`.
 
-  - compactEmptyObjects *(boolean)*: Indicates if empty objects (those which don't have any own property) are compacted even if the used preset is `'pretty'`. A compacted array looks always like `{}`. Defaults to `true`.
+  - `compactEmptyObjects` *(boolean)*: Indicates if empty objects (those which don't have any own property) are compacted even if the used preset is `'pretty'`. A compacted array looks always like `{}`. Defaults to `true`.
 
-  - compactOneElemArrays *(boolean)*: Indicates if arrays with one only element are compacted even if the used preset is `'pretty'`. A one-element compacted array looks always like `["elem"]`. Defaults to `true`.
+  - `compactOneElemArrays` *(boolean)*: Indicates if arrays with one only element are compacted even if the used preset is `'pretty'`. A one-element compacted array looks always like `["elem"]`. Defaults to `true`.
 
 
 For a live demo, see demo/index.html inside this package.
