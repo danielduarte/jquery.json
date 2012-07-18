@@ -6,18 +6,36 @@
     <link rel="stylesheet" href="css/demo.css"/>
 </head>
 <body>
-    <h1 class="title">Your input</h1>
-    (Enter a JSON value)
-    <a class="json-sample" href="#">Sample</a>
-
-    <div id="mode-container">
-        <label for="mode">Mode</label>
-        <select id="mode">
-            <option value="pretty">Pretty</option>
+    <div id="options-container">
+        <label for="preset">Preset</label>
+        <select id="preset">
+            <option value="(default)">Pretty (default)</option>
             <option value="spaced">Spaced</option>
             <option value="compact">Compact</option>
         </select>
+
+        <label for="indent">Indent</label>
+        <select id="indent">
+            <option value="(default)">4 spaces (default)</option>
+            <option value="2">2 spaces</option>
+            <option value="\t">1 tab</option>
+            <option value="---">---</option>
+            <option value="··">··</option>
+            <option value="************">************</option>
+            <option value="X">X</option>
+        </select>
+
+        <label for="key-value-separator">Use Key-Value separator</label>
+        <input type="checkbox" id="key-value-separator" checked="checked"/>
+
+        <code id="call-str"></code>
     </div>
+
+    <div id="input-container">
+        <h1 class="title">Your input</h1> (Enter a JSON value)
+        <a class="json-sample" href="#">Sample</a>
+    </div>
+
     <div><textarea id="input"></textarea></div>
     <pre><code id="result"></code></pre>
 
