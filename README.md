@@ -1,5 +1,5 @@
 jQuery.json plugin
-===================
+==================
 
 - *Author*: Daniel David Duarte
 - *Version*: 1.0.0
@@ -21,7 +21,9 @@ Usage
 -----
 
 1) Include jQuery in your page.
+
 2) Include the jQuery.json plugin (jquery.json.js located in src/ folder of this package).
+
 3) Just call $.toJSON(someValue) with your JavaScript value.
 
 Example:
