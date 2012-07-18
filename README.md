@@ -36,9 +36,9 @@ Example:
         anArray: [1, 2, null, {a:1, b:2, c: []}, ""]
     };
     
-    var myPrettyJsonString  = $.toJSON(myObject, { mode: 'pretty' }); // default
-    var mySpacedJsonString  = $.toJSON(myObject, { mode: 'spaced' });
-    var myCompactJsonString = $.toJSON(myObject, { mode: 'compact' });
+    var myPrettyJsonString  = $.toJSON(myObject, 'pretty'); // default
+    var mySpacedJsonString  = $.toJSON(myObject, 'spaced');
+    var myCompactJsonString = $.toJSON(myObject, 'compact');
 
 Specification:
 
